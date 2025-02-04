@@ -96,7 +96,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>com.kless.forU.Main</mainClass>
+                        <mainClass>com.hary.testy.Application</mainClass>
                     </manifest>
                 </archive>
             </configuration>
