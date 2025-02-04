@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Гибкая черепица</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        .nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #3399cc;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-images {
+            flex: 2;
+
+        }
+
+        .product-images img.main-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+
+            border-radius: 5px;
+        }
+
+        .blog {
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+
+        .blog img {
+            max-width: 250px;
+        }
+
+        .blog .text {
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            transition: 0.5s;
+            width: 98%;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 5px;
+            color: #fff;
+        }
+
+        .blog:hover .text {
+            opacity: 1;
+        }
+
+        .additional-images {
+            display: flex;
+            flex-direction: column;
+            gap: 2px; /* Минимальный отступ между изображениями */
+        }
+
+        .additional-images img {
+            width: 100px;
+            height: 150px;
+
+            border-radius: 5px;
+        }
+
+        .product-info {
+            flex: 2;
+            padding-left: 20px; /* Уменьшите отступ */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #3399cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<br/>
+<br/>
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/d08/e7xg38jk542xlj95e0ops3euyd3h8ziz/Dragon_LUX_ezheviki_prev_344_386.webp"
+                 alt="">
+            <div class="text">
+                Ежевика
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/c13/tz9xsnp0l8a7zc5b2yf26qifvvdsl5b6/IMG_5056_biskvit_prev_344_386.webp"
+                 alt="">
+            <div class="text">
+                Бисквит
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/041/nm1i15n598rdqud51b2z27mxf1mazixe/IMG_5093_izyum_prev_344_386.webp"
+                 alt="">
+            <div class="text">
+                Изюм
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/0d5/50gh2s79909pfk7vg3zg5lq6i38hsgkx/IMG_5102_fladen_prev_344_386.webp"
+                 alt="">
+            <div class="text">
+                Фладен
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/f96/pv0390qp8thwu20e9wx3mqkx9jvj2p1c/IMG_5105_kofe_prev_344_386.webp"
+                 alt="">
+            <div class="text">
+                Кофе
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/d1f/3wpvbyz4cxgzvhxi1pmz8ktd6lniknhk/IMG_5086_tryufel_prev_344_386.webp"
+                 alt="">
+            <div class="text">
+                Трюфель
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Ламинированная черепица Серия Dragon Lux</h2>
+        <div class="price">29.16 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1073х427 мм</p>
+        <p>Рабочая площадь — 0.46 м2 </p>
+        <p>Высота профиля — 25 мм </p>
+        <p>Рабочая длина угла — 427 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 21.2 кг </p>
+        <p>Размер упаковки — 1235х500х260 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+</body>
+</html>

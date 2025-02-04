@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фасадные панели</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        .nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #3399cc;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-images {
+            flex: 2;
+
+        }
+
+        .product-images img.main-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+
+            border-radius: 5px;
+        }
+
+        .blog {
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+
+        .blog img {
+            max-width: 250px;
+        }
+
+        .blog .text {
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            transition: 0.5s;
+            width: 98%;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 5px;
+            color: #fff;
+        }
+
+        .blog:hover .text {
+            opacity: 1;
+        }
+
+        .additional-images {
+            display: flex;
+            flex-direction: column;
+            gap: 2px; /* Минимальный отступ между изображениями */
+        }
+
+        .additional-images img {
+            width: 100px;
+            height: 150px;
+
+            border-radius: 5px;
+        }
+
+        .product-info {
+            flex: 2;
+            padding-left: 20px; /* Уменьшите отступ */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #3399cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="collapse bg-dark" id="navbarHeader" bis_skin_checked="1">
+
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow" bis_skin_checked="1">
+        <div class="container d-flex justify-content-between" bis_skin_checked="1">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <!--                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>-->
+
+                <strong>Построй свой дом</strong>
+            </a>
+            <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+        </div>
+    </div>
+</header>
+<br/>
+<br/>
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/3a8/82rvx032c8mlq86idcb0j6k3jcqb9ch8/STEIN_YAntarnyy_344_386.webp"
+                 alt="Янтарный">
+            <div class="text">
+                Янтарный
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/3bf/94ceaxm2j4db4gtszos64fle0dc3nuk1/STEIN_Tyemnyy_orekh_344_386.webp"
+                 alt="Темный орех">
+            <div class="text">
+                Темный орех
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/28b/q0lx5ica2od2qi7t05i497814lc6ba9c/STEIN_Antratsit_344_386.webp"
+                 alt="Антрацит">
+            <div class="text">
+                Антрацит
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/613/fngbcw2e0rs049m3fvjd4yl8rq1uw8yh/STEIN_Molochnyy_344_386.webp"
+                 alt="Молочный">
+            <div class="text">
+                Молочный
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/aac/bn8qceg06b5hv5nbwjme662dlu0o09jz/STEIN_Bazalt_344_386.webp"
+                 alt="Базальт">
+            <div class="text">
+                Базальт
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/e6a/lok9sy549ou4hb5fy5f24u13w56norgg/STEIN_Osenniy_les_344_386.webp"
+                 alt="Осенний лес">
+            <div class="text">
+                Осенний лес
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/d96/l5n5s5e1f30dcluwhemowzjnkgqma3dn/STEIN_Bronza_344_386.webp"
+                 alt="Бронза">
+            <div class="text">
+                Бронза
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная панель Stein</h2>
+        <div class="price">32.34 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1098х400 мм</p>
+        <p>Рабочая площадь — 0.44 м2 </p>
+        <p>Высота профиля — 25 мм </p>
+        <p>Рабочая длина угла — 400 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 21.3 кг </p>
+        <p>Размер упаковки — 1226х470х266 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/185/3qvsfo32ev1mhrn8u9iwarkmoqhhturh/BURG-_-Serebristyy_344_386.webp"
+                 alt="Серебристый">
+            <div class="text">
+                Серебристый
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/21f/r9349ged7s7ww2woen417uwd17qtau4z/BURG_metal_prev_344_386.webp"
+                 alt="Металлик">
+            <div class="text">
+                Металлик
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/ded/a1twidin4w4acbwcbrbb17qjo93ja3vp/BURG_Temnyy_344_386.webp"
+                 alt="Тёмный">
+            <div class="text">
+                Тёмный
+            </div>
+        </div>
+
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/e4f/m1pl98lohb86kqyxlj81hpd3fmxhd03j/BURG_tsvet_shersti_344_386.webp"
+                 alt="Шерсть">
+            <div class="text">
+                Шерсть
+            </div>
+        </div>
+
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/c48/uyln25xem9qhyzmg6y4nudhayik6cykc/BURG_Zemlyanoy_344_386.webp"
+                 alt="Земляной">
+            <div class="text">
+                Земляной
+            </div>
+        </div>
+
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/7fc/2dvgo2i6lphxkhutax7r8cqppdj7zo4o/BURG_Pshenichnyy_344_386.webp"
+                 alt="Пшеничный">
+            <div class="text">
+                Пшеничный
+            </div>
+        </div>
+
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/996/u6g9xa3hgvspzoutzyvss0ys4p2bcx74/BURG_Belyy_344_386.webp"
+                 alt="Белый">
+            <div class="text">
+                Белый
+            </div>
+        </div>
+
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/fb7/s2uhxlj7flak1npqkn9yqms92ictms0f/BURG_Platinovyy_344_386.webp"
+                 alt="Платиновый">
+            <div class="text">
+                Платиновый
+            </div>
+        </div>
+
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/2c6/3ka3g5eu3hpzk8ut2t7c4mg8z6qytmtr/BURG_Peschanyy_344_386.webp"
+                 alt="Песчаный">
+            <div class="text">
+                Песчаный
+            </div>
+        </div>
+
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/183/hh2fkkj49mnpw9s820ap0ac7yhfngvnz/BURG_lnyanoy_344_386.webp"
+                 alt="Льняной">
+            <div class="text">
+                Льняной
+            </div>
+        </div>
+
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/4dc/c3vpxko16n61721hsdjo4sesp807gmoc/BURG_Kukuruznyy_344_386.webp"
+                 alt="Кукурузный">
+            <div class="text">
+                Кукурузный
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная панель Burg</h2>
+        <div class="price">29.22 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 946х445 мм</p>
+        <p>Рабочая площадь — 0.42 м2 </p>
+        <p>Высота профиля — 22 мм </p>
+        <p>Рабочая длина угла — 445 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 18.3 кг </p>
+        <p>Размер упаковки — 1116х510х251 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/d0c/tidlctrv1vubcx5omxmzula1ghyrtq4t/BERG_Korichnevyy_344_386.webp"
+                 alt="Коричневый">
+            <div class="text">
+                Коричневый
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/1c6/s30g8j431qczcf3czp49dopfjpb3tbb8/BERG_Zolotistyy_344_386.webp"
+                 alt="Золотой">
+            <div class="text">
+                Золотой
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/554/1ohu1z1bahncdf7h9g9qkmqieg0hm5tn/BERG_Rubinovyy_344_386.webp"
+                 alt="Рубиновый">
+            <div class="text">
+                Рубиновый
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/797/06l2h3a66o0f3wxexpf40nik9rt6xrop/BERG_Seryy_344_386.webp"
+                 alt="Серый">
+            <div class="text">
+                Серый
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/511/e38h9qy9l8jqhqyren7n8epxddh8tg3s/BERG_Kirpichnyy_344_386.webp"
+                 alt="Кирпичный">
+            <div class="text">
+                Кирпичный
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная панель Berg</h2>
+        <div class="price">66.27 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1015х434 мм</p>
+        <p>Рабочая площадь — 0.44 м2 </p>
+        <p>Высота профиля — 17 мм </p>
+        <p>Рабочая длина угла — 434 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 17.9 кг </p>
+        <p>Размер упаковки — 1156х490х196 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/8ae/8gvqzzhuqjbxzi1l6k46a89t3bdde1n1/FELS_granitniy_prev_344_386.webp"
+                 alt="Гранитный">
+            <div class="text">
+                Гранитный
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/1af/rf3neqivqebdkj98rs78rkcq0gcqgf18/FELS_stal_prev_344_386.webp"
+                 alt="Стальной">
+            <div class="text">
+                Стальной
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/04a/q01nutu04hh8wh1oyuw40zispwrwhril/FELS_Rzhanoy_344_386.webp"
+                 alt="Ржаной">
+            <div class="text">
+                Ржаной
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/ad4/xmuym8hmcxiibkb7ktmj6enyjv71f22e/FELS_Perlamutrovyy_344_386.webp"
+                 alt="Перламутровый">
+            <div class="text">
+                Перламутровый
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/432/oddljkylb81cjxyvemjmprdadtjt1wau/FELS_Slonovaya_kost_344_386.webp"
+                 alt="Слоновая кость">
+            <div class="text">
+                Слоновая кость
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/c5b/ouy6mfqdmjv1sogg75p10p1hqolmt6c5/FELS_Arktik_344_386.webp"
+                 alt="Арктик">
+            <div class="text">
+                Арктик
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/ece/ckrlovejr9jwin4fo4wei3nc4qzze822/FELS_Gornyy_khrustal_344_386.webp"
+                 alt="Горный хрусталь">
+            <div class="text">
+                Горный хрусталь
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/45e/owak97zpb70l8mqw0mxu5zt9kzdor7s2/FELS_Terrakotovyy_344_386.webp"
+                 alt="Терракотовый">
+            <div class="text">
+                Терракотовый
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная панель Fels</h2>
+        <div class="price">30.72 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1052х425 мм</p>
+        <p>Рабочая площадь — 0.45 м2 </p>
+        <p>Высота профиля — 17 мм </p>
+        <p>Рабочая длина угла — 434 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 21.2 кг </p>
+        <p>Размер упаковки — 1186х480х321 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/165/8ni363k514hnpc0b3s19tseexc237byf/STERN-_-Sevilya_344_386.webp"
+                 alt="Севилья">
+            <div class="text">
+                Севилья
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/259/zmdm8qtve1ub3lx7ku89fz1wf8x0g3kq/STERN_Navakho_344_386.webp"
+                 alt="Навахо">
+            <div class="text">
+                Навахо
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/9a1/piw0npghoeykxkxa2ztdwgivafupjqms/STERN_Dakota_344_386.webp"
+                 alt="Дакота">
+            <div class="text">
+                Дакота
+            </div>
+        </div><div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/7ef/8rn3965qt5z11iwpgp9095iba53mxm1n/STERN_Marrakesh_344_386.webp"
+                 alt="Марракеш">
+            <div class="text">
+                Марракеш
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/320/2q4lkk5zdzexk0vqhzch7shqaa1xbuia/STERN_Antik_prev_344_386.webp"
+                 alt="Антик">
+            <div class="text">
+                Антик
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/48e/4yhr4ij2vbs7nug3e616b391hb364h01/STERN_Rodos_344_386.webp"
+                 alt="Родос">
+            <div class="text">
+                Родос
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/857/lhu3vi34jzdi2w0zsmx12ou5wlakfsiw/STERN_Marmaris_344_386.webp"
+                 alt="Мармарис">
+            <div class="text">
+                Мармарис
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная панель Stern</h2>
+        <div class="price">29.16 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1073х427 мм</p>
+        <p>Рабочая площадь — 0.46 м2 </p>
+        <p>Высота профиля — 25 мм </p>
+        <p>Рабочая длина угла — 427 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 21.2 кг </p>
+        <p>Размер упаковки — 1235х500х260 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/bf3/ohps3k2eld6zfza54i3hu3arrdfmlbr2/KLINKER-_-Kolorado_344_386.webp"
+                 alt="Колорадо">
+            <div class="text">
+                Колорадо
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/9ec/0gwkeitkp9zlt9hplq6btssshjnk1oy7/KLINKER_Kalakhari_344_386.webp"
+                 alt="Калахари">
+            <div class="text">
+                Калахари
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/597/xueggqehshio9wdiz28tl5swsxb67j9m/KLINKER_Atakama_344_386.webp"
+                 alt="Атакама">
+            <div class="text">
+                Атакама
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/ac2/iyz80hwp7w9qpqq7p858dnh9k3lyzb7q/KLINKER_Karakumy_344_386.webp"
+                 alt="Каракумы">
+            <div class="text">
+                Каракумы
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/c65/yxdikoms1y1dc311f18jjk1ago9s3u90/KLINKER_Sakhara_10_07_19_344_386.webp"
+                 alt="Сахара">
+            <div class="text">
+                Сахара
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/125/1rn1r36wuzvx8aihow02k3sujpzbw49d/KLINKER_Monte_344_386.webp"
+                 alt="Монте">
+            <div class="text">
+                Монте
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная панель Klinker</h2>
+        <div class="price">28.80 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 998х406 мм</p>
+        <p>Рабочая площадь — 0.41 м2 </p>
+        <p>Высота профиля — 21 мм </p>
+        <p>Рабочая длина угла — 406 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 18.4 кг </p>
+        <p>Размер упаковки — 1143х480х217 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/a51/idx1855da3xsl51s29n18zcsl2amm15r/SLATE_kurshavel_prev1_344_386.webp"
+                 alt="Куршавель">
+            <div class="text">
+                Куршавель
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/72f/jczh412ygd0woll7olqzxnxg22joqblz/SLATE_val_gardena_prev1_344_386.webp"
+                 alt="Валь-Гардена">
+            <div class="text">
+                Валь-Гардена
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/032/ujg5r8310makkqfa6y3xmr5k6d7phsk4/SLATE_shamoni_prev1_344_386.webp"
+                 alt="Шамони">
+            <div class="text">
+                Шамони
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/345/kwxp3ytekihx7413ph15tjsn84lxexe6/SLATE_leh_prev1_344_386.webp"
+                 alt="Лех">
+            <div class="text">
+                Лех
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/b69/893kok80z734ukchyofaepzsnbf3akkt/SLATE_cermat_prev1_344_386.webp"
+                 alt="Церматт">
+            <div class="text">
+                Церматт
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/144/4mfzo2n1d5rct1fsijdk6pkpqp6c308o/SLATE_shamperi_prev_344_386.webp"
+                 alt="Шампери">
+            <div class="text">
+                Шампери
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная панель Сланец</h2>
+        <div class="price">21.60 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 930х406 мм</p>
+        <p>Рабочая площадь — 0.38 м2 </p>
+        <p>Высота профиля — 26 мм </p>
+        <p>Рабочая длина угла — 406 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 18.3 кг </p>
+        <p>Размер упаковки — 1090х480х300 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/2d6/ivk0pv2ssvdlo29z72x4cnkmlm6hvava/Dufour_tirol_prev_344_386.webp"
+                 alt="Тироль">
+            <div class="text">
+                Тироль
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/757/bv320uanoc75ztrtgky6zxx32dnn3xpm/Dufour_shatel_prev_344_386.webp"
+                 alt="Шатель">
+            <div class="text">
+                Шатель
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/d81/kwbhxmhaqcn2bet22v3z226uzei46ys2/Dufour_kaprun_prev_344_386.webp"
+                 alt="Капрун">
+            <div class="text">
+                Капрун
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/3fc/j2dhdpcxkkwdc6lf56pzqsb12aixpby5/Dufour_verbe_prev_344_386.webp"
+                 alt="Вербье">
+            <div class="text">
+                Вербье
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/b38/8kbkzm60r98zlhzuxy4cvzmbnx0zeluz/Dufour_maribel_prev_344_386.webp"
+                 alt="Мерибель">
+            <div class="text">
+                Мерибель
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/cd2/iayz0c3ma7mxv70j3jk7hki0o52orz13/Dufour_kurmaor_prev_344_386.webp"
+                 alt="Курмайор">
+            <div class="text">
+                Курмайор
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/6ce/b30gvasdl7ba08k1nbz5qk44840ah8px/Dufour_dolomiti_prev_344_386.webp"
+                 alt="Доломиты">
+            <div class="text">
+                Доломиты
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/146/0r1qt9c5zr9he8ihw9hgnw0rmzxkryo3/Dufour_ishgil_prev1_344_386.webp"
+                 alt="Ишгль">
+            <div class="text">
+                Ишгль
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/05d/0ae1wvnygaj3f1z1s12nuiexjaigut6o/Dufour_davos_prev1_344_386.webp"
+                 alt="Давос">
+            <div class="text">
+                Давос
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/46d/fa28exmmwa4s59p3uny3n39b650zc47h/Dufour_zelden_prev1_344_386.webp"
+                 alt="Зёльден">
+            <div class="text">
+                Зёльден
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/20c/7p0dgcoxbq60ofmtjghax4kk03pe3z4w/Dufour_insburg_prev1_344_386.webp"
+                 alt="Инсбрук">
+            <div class="text">
+                Инсбрук
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/aac/jbgalrvfsgpag2gawbgzwv08xf5wtv6q/Dufour_villar_prev1_344_386.webp"
+                 alt="Виллар">
+            <div class="text">
+                Виллар
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная панель Дюфур</h2>
+        <div class="price">24.00 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1014х424 мм</p>
+        <p>Рабочая площадь — 0.43 м2 </p>
+        <p>Высота профиля — 25 мм </p>
+        <p>Рабочая длина угла — 424 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 18.6 кг </p>
+        <p>Размер упаковки — 1200х500х260 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/859/dh44368v4yhgbwzml6hn80gw2cvjyd1a/FLEMISH_Korichnevyy_344_386.webp"
+                 alt="Коричневый">
+            <div class="text">
+                Коричневый
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/880/m3s0x3y7gmcxtxu25bnioiut71s352hq/FLEMISH_ZHeltyy_zhzhenyy_344_386.webp"
+                 alt="Жёлтый жжёный">
+            <div class="text">
+                Жёлтый жжёный
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/949/addbfzv9oz7fo7u1s1k76gsf279k6z4q/FLEMISH_zhelty_prev_344_386.webp"
+                 alt="Жёлтый">
+            <div class="text">
+                Жёлтый
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/bdf/ajr2iv7ionj1o1h249f8rudxnkfaim8h/FLEMISH_Krasnyy_zhzhenyy_344_386.webp"
+                 alt="Красный жжёный">
+            <div class="text">
+                Красный жжёный
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/d75/t4poam0kjujhna7ula2po3wbbd832top/FLEMISH_krasniy_prev_344_386.webp"
+                 alt="Красный">
+            <div class="text">
+                Красный
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/e22/jzd92dhyo80j1ucnttlwdjnpfyaxr5yg/FLEMISH_Belyy_344_386.webp"
+                 alt="Белый">
+            <div class="text">
+                Белый
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная панель Флемиш</h2>
+        <div class="price">26.34 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1095х420 мм</p>
+        <p>Рабочая площадь — 0.46 м2 </p>
+        <p>Высота профиля — 17.4 мм </p>
+        <p>Рабочая длина угла — 420 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 20 кг </p>
+        <p>Размер упаковки — 1225х495х190 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/7b7/mepxthok123c1zj9z0m17m29zjhv365q/altai_grafit_prev1_344_386.webp"
+                 alt="Графит">
+            <div class="text">
+                Графит
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/194/awm7rz43af5rsm8gycl8buwk2o4yvmy1/altai_shokolad_prev1_344_386.webp"
+                 alt="Шоколад">
+            <div class="text">
+                Шоколад
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/44e/5i5mr4fsjdh1u1fk9oogsdhn5j8ntj5r/altai_kremovii_prev1_344_386.webp"
+                 alt="Кремовый">
+            <div class="text">
+                Кремовый
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/893/t9keba3zk6q2640e86poxn68tla7golw/altai_korica_prev1_344_386.webp"
+                 alt="Корица">
+            <div class="text">
+                Корица
+            </div>
+        </div> <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/e2c/phvbyhfse8yhr29ol8ai7i16sgx44ebl/altai_vanil_prev_344_386.webp"
+                 alt="Ваниль">
+            <div class="text">
+                Ваниль
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная панель Алтай</h2>
+        <div class="price">24.96 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1098х400 мм</p>
+        <p>Рабочая площадь — 0.44 м2 </p>
+        <p>Высота профиля — 25 мм </p>
+        <p>Рабочая длина угла — 400 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 10 шт </p>
+        <p>Вес брутто — 21.3 кг </p>
+        <p>Размер упаковки — 1226х470х266 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+<footer class="container py-5">
+    <div class="row" bis_skin_checked="1">
+        <div class="col-12 col-md" bis_skin_checked="1">
+            <small class="d-block mb-3 text-muted">© 2020-2024</small>
+        </div>
+
+        <div class="col-6 col-md" bis_skin_checked="1">
+            <h5 >О нас</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="https://vk.com/psd_soligorsk?from=search">VK</a></li>
+                <li><a class="text-muted" href="https://www.instagram.com/postroy_svoy_dom_sol/">Instagram</a></li>
+                Мы находимся по адресу: д.Метявичи, ул.Калинина д.17
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>

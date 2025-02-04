@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фасадная плитка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        .nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #3399cc;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-images {
+            flex: 2;
+
+        }
+
+        .product-images img.main-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+
+            border-radius: 5px;
+        }
+
+        .blog {
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+
+        .blog img {
+            max-width: 250px;
+        }
+
+        .blog .text {
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            transition: 0.5s;
+            width: 98%;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 5px;
+            color: #fff;
+        }
+
+        .blog:hover .text {
+            opacity: 1;
+        }
+
+        .additional-images {
+            display: flex;
+            flex-direction: column;
+            gap: 2px; /* Минимальный отступ между изображениями */
+        }
+
+        .additional-images img {
+            width: 100px;
+            height: 150px;
+
+            border-radius: 5px;
+        }
+
+        .product-info {
+            flex: 2;
+            padding-left: 20px; /* Уменьшите отступ */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #3399cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="collapse bg-dark" id="navbarHeader" bis_skin_checked="1">
+
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow" bis_skin_checked="1">
+        <div class="container d-flex justify-content-between" bis_skin_checked="1">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <!--                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>-->
+
+                <strong>Построй свой дом</strong>
+            </a>
+            <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+        </div>
+    </div>
+</header>
+<br/>
+<br/>
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/305/9oy0w36jmy4hib6c9sz2qjyehadlsjh7/FPL_malenkaya-rubinovyy_344_386.webp"
+                 alt="Рубиновый">
+            <div class="text">
+                Рубиновый
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/5fc/r1m3ywmu74xol85l0360gy7ma8ea61n2/FPL_malenkaya-korichnevyy_344_386.webp"
+                 alt="Коричневый">
+            <div class="text">
+                Коричневый
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/dd7/4gu3suc4ddazs374w0ukzp5i8kj3zuh1/FPL_malenkaya-bezhevyy_344_386.webp"
+                 alt="Бежевый">
+            <div class="text">
+                Бежевый
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/28f/6ludj7dvn3irtbn0cii2oj6i3tpo4orj/FPL_malenkaya-seryy_344_386.webp"
+                 alt="Серый">
+            <div class="text">
+                Серый
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/533/uw5zu3i7jgn0zafirf04ufk6316y97ba/695_344_386.webp"
+                 alt="Вагаси">
+            <div class="text">
+                Вагаси
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/763/8penl80te9589t3pl9ru7przzh3taxzw/695_344_386.webp"
+                 alt="Песчаный">
+            <div class="text">
+                Песчаный
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/444/p6bik02e9cupbyj9pen21p0unw1a7tvg/695_344_386.webp"
+                 alt="Зрелый каштан">
+            <div class="text">
+                Зрелый каштан
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/c91/562euxhpw0v7c2cw45bw7nex46zrp8ut/prev1_344_386.webp"
+                 alt="Халва">
+            <div class="text">
+                Халва
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/5e0/0azakuwlml0go99725rwqu1tu3a8b2y1/695_344_386.webp"
+                 alt="Клубника">
+            <div class="text">
+                Клубника
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/220/iz7i1msl50fju73depui4z467eoqhych/prev_344_386.webp"
+                 alt="Янтарный">
+            <div class="text">
+                Янтарный
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Фасадная плитка PREMIUM, BRICK</h2>
+        <div class="price">30.27 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1000х250( +/- 3) мм</p>
+        <p>Толщина гонта — 3.0 +/- 0.2 мм</p>
+        <p>Форма нарезки — Бобровый хвост</p>
+        <p>Форма нарезки — Кирпич</p>
+        <p>Коэффициент перехлёста — 2.5 </p>
+        <p>Водопоглощениев течение 24 часов, % масс, не более — 2</p>
+        <p>Стойкость к образованию вздутий — Устойчив</p>
+        <p>Состав — СБС-модифицированный битум</p>
+        <p>Максимальная сила растяжения в продольном направлении, Н, не менее — 600</p>
+        <p>Максимальная сила растяжения в поперечном направлении, Н, не менее — 400</p>
+        <p>Прочность на разрыв стержнем гвоздя, Н, не менее — 130</p>
+        <p>Теплостойкость материала, 2 часа при температуре, ºС, не ниже — 100</p>
+        <p>Гибкость материала на брусе R=25±0,2 мм, ºС, не выше — -10</p>
+        <p>Потеря гранул или чешуек посыпки, г на образец, не более — 1,0</p>
+        <p>Стойкость к старению под воздействием искусственных климатических факторов — Пройдено (60 циклов)</p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 20 шт </p>
+        <p>Упаковок на поддоне — 56 шт </p>
+        <p>Вес поддона брутто — 1395 кг </p>
+        <p>Вес брутто — 24 кг </p>
+        <p>Покрываемая поверхность из одной упаковки — 2 м2 </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<footer class="container py-5">
+    <div class="row" bis_skin_checked="1">
+        <div class="col-12 col-md" bis_skin_checked="1">
+            <small class="d-block mb-3 text-muted">© 2020-2024</small>
+        </div>
+
+        <div class="col-6 col-md" bis_skin_checked="1">
+            <h5 >О нас</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="https://vk.com/psd_soligorsk?from=search">VK</a></li>
+                <li><a class="text-muted" href="https://www.instagram.com/postroy_svoy_dom_sol/">Instagram</a></li>
+                Мы находимся по адресу: д.Метявичи, ул.Калинина д.17
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Построй свой дом</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        .nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #3399cc;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-images {
+            flex: 2;
+
+        }
+
+        .product-images img.main-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+
+            border-radius: 5px;
+        }
+
+        .blog {
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+
+        .blog img {
+            max-width: 250px;
+        }
+
+        .blog .text {
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            transition: 0.5s;
+            width: 98%;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 5px;
+            color: #fff;
+        }
+
+        .blog:hover .text {
+            opacity: 1;
+        }
+
+        .additional-images {
+            display: flex;
+            flex-direction: column;
+            gap: 2px; /* Минимальный отступ между изображениями */
+        }
+
+        .additional-images img {
+            width: 100px;
+            height: 150px;
+
+            border-radius: 5px;
+        }
+
+        .product-info {
+            flex: 2;
+            padding-left: 20px; /* Уменьшите отступ */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #3399cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="collapse bg-dark" id="navbarHeader" bis_skin_checked="1">
+
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow" bis_skin_checked="1">
+        <div class="container d-flex justify-content-between" bis_skin_checked="1">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <!--                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>-->
+
+                <strong>Построй свой дом</strong>
+            </a>
+            <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+        </div>
+    </div>
+</header>
+<br/>
+<br/>
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/05f/ohte1fh2anxv8b9b8mwitdiltozgryds/slivki_344_386.webp"
+                 alt="Сливки">
+            <div class="text">
+                Сливки
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/025/zfumek9z3r1qafca7tx2wopsbb7b7fcs/plombir_344_386.webp"
+                 alt="Канадская береза">
+            <div class="text">
+                Пломбир
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/7a4/6lp3kb2d1qukudt1395e5yvll1ivmj6u/grafit_344_386.webp"
+                 alt="Орех">
+            <div class="text">
+                Графит
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Сайдинг Premium, Вертикальный</h2>
+        <div class="price">11.70 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3000х180 мм</p>
+        <p>Рабочая площадь — 0.54 м2 </p>
+        <p>Толщина — 1.1 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 16 шт </p>
+        <p>Вес брутто — 19.6 кг </p>
+        <p>Размер упаковки — 3010х18х135 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_detail/iblock/571/o0066y86t8gg336x39l9va682r0pv65t/LUX_Sayding_Elochka_Mindal_2_611_798.webp"
+                 alt="Миндаль">
+            <div class="text">
+                Миндаль
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/c8a/ayf7fv707cu639zcke9yin0wwir3yvr5/LUX_Sayding_Elochka_kanadskaya_bereza_1_344_386.webp"
+                 alt="Канадская береза">
+            <div class="text">
+                Канадская Береза
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/bb0/myyu7kp7cwtzwhcjfninm80cbnwa0brg/LUX_Sayding_Elochka_Oreh_1_344_386.webp"
+                 alt="Орех">
+            <div class="text">
+                Орех
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/1a2/2dpmqe9ew2w9onyp59v8ov9g0y6nxm4g/LUX_Sayding_Elochka_kedr_1_344_386.webp"
+                 alt="Кедр">
+            <div class="text">
+                Кедр
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/a0a/v3oqg6h91wi09hfjblg9w7sjj0aofa9e/LUX_Sayding_Elochka_zreliy_kashtan_1_344_386.webp"
+                 alt="Зрелый каштан">
+            <div class="text">
+                Зрелый каштан
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Сайдинг LUX под дерево, Ёлочка</h2>
+        <div class="price">23.88 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3600х254 мм</p>
+        <p>Рабочая площадь — 0.91 м2 </p>
+        <p>Толщина — 1.2 мм </p>
+        <p>Состав — Поливинилхлорид </p>
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 20 шт </p>
+        <p>Вес брутто — 39.8 кг </p>
+        <p>Размер упаковки — 3026х306х151 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_detail/iblock/4ce/1cccahk0a2cxkmci2m2b6w5tg8g7rho6/siding_lux_blokhaus_d4_7t_ysuurisk_1_611_798.webp"
+                 alt="Уссурийский">
+            <div class="text">
+                Уссурийский
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/65c/clgzev6h1p3ogcq50sv6sbrnksshs40t/siding_lux_blokhaus_d4_7t_altai_1_344_386.webp"
+                 alt="Алтайский">
+            <div class="text">
+                Алтайский
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/4db/5ksuhlj83v5ul8ikhbvw47k46ebh17z2/siding_lux_blokhaus_d4_7t_sibirsky_1400_4000_1_344_386.webp"
+                 alt="Сибирский">
+            <div class="text">
+                Сибирский
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/007/996wwozog2u2i6bdrrpotcnodptnx6j2/siding_lux_blokhaus_d4_7t_kamchatsky_1400_4000_1_344_386.webp"
+                 alt="Камчатский">
+            <div class="text">
+                Камчатский
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/6b8/bao3dy13cazehxux7xcri1qpnby1jttw/siding_lux_blokhaus_d4_7t_amursky_1400_4000_1_344_386.webp"
+                 alt="Амурский">
+            <div class="text">
+                Амурский
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Сайдинг LUX под дерево, Блок-Хаус</h2>
+        <div class="price">19.80 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3600х243 мм</p>
+        <p>Рабочая площадь — 0.87 м2 </p>
+        <p>Толщина — 1.2 мм </p>
+        <p>Состав — Поливинилхлорид </p>
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 20 шт </p>
+        <p>Вес брутто — 37.6 кг </p>
+        <p>Размер упаковки — 3626х296х126 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/5c5/lvgbdo07filvblrtzsavdkmea7p29s6v/LUX_Sayding_Blok_KHaus_D4_7T_zrely_kashtan1_344_386.webp"
+                 alt="Зрелый каштан">
+            <div class="text">
+                Зрелый каштан
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/207/g5uqqgig2ihltubx06sg67ii0ylu412i/LUX_Sayding_Blok_KHaus_D4_7T_kanadskaya_bereza1_344_386.webp"
+                 alt="Канадская береза">
+            <div class="text">
+                Канадская береза
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/f4b/r7c6ej12t9fkvf47050o2y1qrlthhn0w/LUX_Sayding_Blok_KHaus_D4_7T_ryabina1_344_386.webp"
+                 alt="Рябина">
+            <div class="text">
+                Рябина
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/3dc/zpuygep4lzym0jotchlcshhri0buc6z6/LUX_Sayding_Blok_KHaus_D4_7T_kedr1_344_386.webp"
+                 alt="Кедр">
+            <div class="text">
+                Кедр
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/fdb/wqeipowge08mpddmq6gmst6zrnxhg9i9/LUX_Sayding_Blok_KHaus_D4_7T_oreh1_344_386.webp"
+                 alt="Орех">
+            <div class="text">
+                Орех
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/e2f/2fwq3nbwaesrb7ovl73x1n6t92ki8q7b/LUX_Sayding_Blok_KHaus_D4_7T_mindal1_344_386.webp"
+                 alt="Миндаль">
+            <div class="text">
+                Миндаль
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Сайдинг блок-хаус Монреаль под дерево</h2>
+        <div class="price">19.80 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3600х243 мм</p>
+        <p>Рабочая площадь — 0.87 м2 </p>
+        <p>Толщина — 1.2 мм </p>
+        <p>Состав — Поливинилхлорид </p>
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 20 шт </p>
+        <p>Вес брутто — 37.6 кг </p>
+        <p>Размер упаковки — 3626х296х126 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/41a/xxe7g2mfu08092a3sr8f0x493ylppgk7/bergart_keshu_1_344_386.webp"
+                 alt="Кешью">
+            <div class="text">
+                Кешью
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/288/rrusaeakre6u8ci16f3vsjliq4zltvkn/bergart_pekan1_344_386.webp"
+                 alt="Пекан">
+            <div class="text">
+                Пекан
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/597/b269uxi6ndwdrynluatk7zep4y9c1qqk/bergart_kedr_oreh_1_344_386.webp"
+                 alt="Кедровый орех">
+            <div class="text">
+                Кедровый орех
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/f43/a7inxvcuwb0k52gwmi4fy4l1fn3wsv39/bergart_kokos_1_344_386.webp"
+                 alt="Кокос">
+            <div class="text">
+                Кокос
+            </div>
+        </div>
+
+    </div>
+
+    <div class="product-info">
+        <h2>Сайдинг LUX под камень, Bergart</h2>
+        <div class="price">18.60 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1809х285 мм</p>
+        <p>Рабочая площадь — 0.52 м2 </p>
+        <p>Толщина — 28 мм </p>
+        <p>Состав — Поливинилхлорид </p>
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 14 шт </p>
+        <p>Вес брутто — 18.9 кг </p>
+        <p>Размер упаковки — 1926х318х358 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+<br/>
+
+
+<br/>
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/7a9/df2w36f1ey9yu33vs6d7gno9c0dnf213/LUX_Sayding_BRUS_D6S_zrely_kashtan1_344_386.webp"
+                 alt="Зрелый каштан">
+            <div class="text">
+                Зрелый каштан
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/83e/oo1o0fcbg3apul1geligy96y2iy1t3vn/LUX_Sayding_BRUS_D6S_kanadskaya_bereza1_344_386.webp"
+                 alt="Канадская береза">
+            <div class="text">
+                Канадская береза
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/995/cg1f6vrkpha8uicxm0c1uhrw3x5gixmo/LUX_Sayding_BRUS_D6S_ryabina1_344_386.webp"
+                 alt="Рябина">
+            <div class="text">
+                Рябина
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/3f2/78ks9b8ma7vwzu1fsp9hik62ttndfsx2/LUX_Sayding_BRUS_D6S_kedr1_344_386.webp"
+                 alt="Кедр">
+            <div class="text">
+                Кедр
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/e1d/ppnfyu8zwbtqm516x1s2c01t6vie3kvm/LUX_Sayding_BRUS_D6S_oreh1_344_386.webp"
+                 alt="Орех">
+            <div class="text">
+                Орех
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/5fc/oig14zy39avk1x2t95h9txkn2o1vn75s/LUX_Sayding_BRUS_D6S_mindal1_344_386.webp"
+                 alt="Миндаль">
+            <div class="text">
+                Миндаль
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Сайдинг LUX под дерево, Брус</h2>
+        <div class="price">27.96 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3600х300 мм</p>
+        <p>Рабочая площадь — 1.08 м2 </p>
+        <p>Толщина — 1.2 мм </p>
+        <p>Состав — Поливинилхлорид </p>
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 16 шт </p>
+        <p>Вес брутто — 39.8 кг </p>
+        <p>Размер упаковки — 3626х353х136 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+<br/>
+
+
+<br/>
+
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/c23/j2ous3c12epw3r1gv49wi4v9ri5fjqff/Lux_Soffit_TSP_zrely_kastan_2_344_386.webp"
+                 alt="Зрелый каштан">
+            <div class="text">
+                Зрелый каштан
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/3a1/rimlpsuq32yh44k114anlv00oi2am8sa/Lux_Soffit_TSP_kanadskaya_bereza_2_344_386.webp"
+                 alt="Канадская береза">
+            <div class="text">
+                Канадская береза
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/939/hxpv5ld8we7lrs11jxuz1i9on21m7sxq/Lux_Soffit_TSP_ryabina_2_344_386.webp"
+                 alt="Рябина">
+            <div class="text">
+                Рябина
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/b57/i11xe9s6po8di3mfjkrwcej6t6cf3cby/Lux_Soffit_TSP_kedr_2_344_386.webp"
+                 alt="Кедр">
+            <div class="text">
+                Кедр
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/6a7/ur9rn7ltqcu8qklvkqyiot1ee12e35nl/Lux_Soffit_TSP_oreh_2_344_386.webp"
+                 alt="Орех">
+            <div class="text">
+                Орех
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/9f8/iowi9k015qc4vnx2c9o9ocdzmbe2r7k6/Lux_Soffit_TSP_mindal_2_344_386.webp"
+                 alt="Миндаль">
+            <div class="text">
+                Миндаль
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/9f8/iowi9k015qc4vnx2c9o9ocdzmbe2r7k6/Lux_Soffit_TSP_mindal_2_344_386.webp"
+                 alt="Фундук">
+            <div class="text">
+                Фундук
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Софит Lux, T4 с центральной перфорацией</h2>
+        <div class="price">23.52 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3000х305 мм</p>
+        <p>Рабочая площадь — 0.92 м2 </p>
+        <p>Толщина — 1.2 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 16 шт </p>
+        <p>Вес брутто — 31.2 кг </p>
+        <p>Размер упаковки — 3026х353х136 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+
+<br/>
+
+<br/>
+
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/29d/wnh13db0opwtdws17nguhy0nsvqi69x0/rocky_pekan_344_386.webp"
+                 alt="Пекан">
+            <div class="text">
+                Пекан
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/1f0/zxiizxvkhhvcb5y7cki59604p9xdupg4/rocky_kedr_oreh_344_386.webp"
+                 alt="Кедровый орех">
+            <div class="text">
+                Кедровый орех
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/6ce/5cf7l5m302fet8ovp53g01435k7a5e45/rocky_kokos_344_386.webp"
+                 alt="Кокос">
+            <div class="text">
+                Кокос
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/2d5/axe7q9gbfy2pbs6q6bz39oolsi6jorhy/rocky_keshu_344_386.webp"
+                 alt="Кешью">
+            <div class="text">
+                Кешью
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/f85/5vyemi9a6uuwpaqjdukguyrdc8o5od4p/rocky_arahis2_344_386.webp"
+                 alt="Арахис">
+            <div class="text">
+                Арахис
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Сайдинг LUX под камень, Rocky</h2>
+        <div class="price">18.30 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 1787х285 мм</p>
+        <p>Рабочая площадь — 0.51 м2 </p>
+        <p>Толщина — 41 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 12 шт </p>
+        <p>Вес брутто — 17 кг </p>
+        <p>Размер упаковки — 1926х318х358 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+
+<br/>
+
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/115/zvqvbtcu421vgpuuf2v10ulzrx01cwom/siding_korabelnyy_brus_d4_5d_halva_1_344_386.webp"
+                 alt="Халва">
+            <div class="text">
+                Халва
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/c7c/ynlw3cmi7gzosw1bnf8mt8o4nultrztw/siding_korabelnyy_brus_d4_5d_mango_1_344_386.webp"
+                 alt="Манго">
+            <div class="text">
+                Манго
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/c7c/ynlw3cmi7gzosw1bnf8mt8o4nultrztw/siding_korabelnyy_brus_d4_5d_mango_1_344_386.webp"
+                 alt="Фисташки">
+            <div class="text">
+                Фисташки
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/bfa/rxplxxth0cojwumxp9x8466m0ug22wn7/siding_korabelnyy_brus_d4_5d_slivki_1_344_386.webp"
+                 alt="Сливки">
+            <div class="text">
+                Сливки
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/d77/hhmoniqx62fhd2i7qktrl25xomggst1s/siding_korabelnyy_brus_d4_5d_krem_brule_1_344_386.webp"
+                 alt="Крем-брюле">
+            <div class="text">
+                Крем-брюле
+            </div>
+        </div>
+
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/bd3/r3u70wviwtqoe49isxng44fxdapi6ii6/siding_korabelnyy_brus_d4_5d_karamel_1_344_386.webp "
+                 alt="Карамель">
+            <div class="text">
+                Карамель
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/e0f/q1zvhkg2j4q1eyscb7xnobewbbdm07mw/siding_korabelnyy_brus_d4_5d_limon_1_344_386.webp"
+                 alt="Лимон">
+            <div class="text">
+                Лимон
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/a37/n41t8z2ylaw7ghj90ohxzgsctdnnsq7x/siding_korabelnyy_brus_d4_5d_persik_1_344_386.webp"
+                 alt="Персик">
+            <div class="text">
+                Персик
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/998/c7vr6cx3fxzgblgi3ayqxs03bxd3a4gp/siding_korabelnyy_brus_d4_5d_oliva_1_344_386.webp"
+                 alt="Олива">
+            <div class="text">
+                Олива
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/dfc/vks3fryh218zza5dem1if09tu4o21d0v/siding_korabelnyy_brus_d4_5d_kiwi_1_344_386.webp"
+                 alt="Киви">
+            <div class="text">
+                Киви
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product-info">
+        <h2>Сайдинг Premium, Корабельный брус</h2>
+        <div class="price">15.12 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3600х232 мм</p>
+        <p>Рабочая площадь — 0.84 м2 </p>
+        <p>Толщина — 1.1 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 20 шт </p>
+        <p>Вес брутто — 33.2 кг </p>
+        <p>Размер упаковки — 3626x286x141 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/5e3/xjv8zahm1wreysxsm3szkbqmsc3wu119/siding_blokhaus_d4_7t_karamel_344_386.webp"
+                 alt="Карамель">
+            <div class="text">
+                Карамель
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/7f5/hkxb8x0gal766zswg6ldq5a84iv6250j/siding_blokhaus_d4_7t_mango_344_386.webp"
+                 alt="Манго">
+            <div class="text">
+                Манго
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/68d/ebq8k3t31b89440q6rp43zkp84dre2og/siding_blokhaus_d4_7t_fistashki_344_386.webp"
+                 alt="Фисташки">
+            <div class="text">
+                Фисташки
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/341/jlvzcujhym5sd5n5ipsabufttkk4iy1y/siding_blokhaus_d4_7t_slivki_344_386.webp"
+                 alt="Сливки">
+            <div class="text">
+                Сливки
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/306/ko5032uq4efn6dz2c3vs4ywsshiejmnd/siding_blokhaus_d4_7t_krem_brule_344_386.webp"
+                 alt="Крем-брюле">
+            <div class="text">
+                Крем-брюле
+            </div>
+        </div>
+
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/be1/9p2mjokcpjowf14w1stnwacuml3tzbp6/siding_blokhaus_d4_7t_kapuchino_344_386.webp "
+                 alt="Капучино">
+            <div class="text">
+                Капучино
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/485/q635jp7w4ebskr4o0vxe09lbewpcj68k/siding_blokhaus_d4_7t_limon_344_386.webp"
+                 alt="Лимон">
+            <div class="text">
+                Лимон
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/d4e/1a6vqug020n4cmkqk0d9u0zy867mvoyw/siding_blokhaus_d4_7t_banan_344_386.webp"
+                 alt="Банан">
+            <div class="text">
+                Банан
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product-info">
+        <h2>Сайдинг Premium, Блок-Хаус</h2>
+        <div class="price">16.86 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3600х243 мм</p>
+        <p>Рабочая площадь — 0.87 м2 </p>
+        <p>Толщина — 1.1 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 20 шт </p>
+        <p>Вес брутто — 34.3 кг </p>
+        <p>Размер упаковки — 3626x296x126 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/140/zrhhqlz47u58n7fm7lk2tl8ki1yyf1kw/brus_d6s_karamel_1_344_386.webp"
+                 alt="Карамель">
+            <div class="text">
+                Карамель
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/b90/khew5tgciacvpte56ulpdi0zbw371nh5/LUX-Sayding-BRUS-D6S-_MANGO__344_386.webp"
+                 alt="Манго">
+            <div class="text">
+                Манго
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/04d/p3kdom7c2xmdy1qac5h4fidhu0t8q907/2_344_386.webp"
+                 alt="Графит">
+            <div class="text">
+                Графит
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/597/p946cjd0q7961ospp4samz8bdrf5nxy0/brus_d6s_krem_slivki_1_344_386.webp"
+                 alt="Сливки">
+            <div class="text">
+                Сливки
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/386/89d0fda2qanf15os088ec9hts2x9og6s/brus_d6s_krem_brule_1_344_386.webp"
+                 alt="Крем-брюле">
+            <div class="text">
+                Крем-брюле
+            </div>
+        </div>
+
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/b96/nv7kuu1jtaz8chb996dpvrjkar1o5gay/brus_d6s_kapuchino_1_344_386.webp"
+                 alt="Капучино">
+            <div class="text">
+                Капучино
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/040/lfvaei0cnv962qa4qxxq7g3y1aj3swek/BRUS_D6S_PLOMBIR_344_386.webp"
+                 alt="Пломбир">
+            <div class="text">
+                Пломбир
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/549/kl58pevs6boskkvke0sq7de4ren13m4o/brus_d6s_banan_1_344_386.webp"
+                 alt="Банан">
+            <div class="text">
+                Банан
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product-info">
+        <h2>Сайдинг Premium, Брус</h2>
+        <div class="price">22.00 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3600х300 мм</p>
+        <p>Рабочая площадь — 1.08 м2 </p>
+        <p>Толщина — 1.1 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 16 шт </p>
+        <p>Вес брутто — 38 кг </p>
+        <p>Размер упаковки — 3626x353x136 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/2e7/sxutk9epxqmy527umanw8hjtdn0nw2ni/Soffit_SP_kashtan_1_344_386.webp"
+                 alt="Каштан">
+            <div class="text">
+                Каштан
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/5df/t2cdikf1c94229tljecru0pukipq7uja/Soffit_SP_plombir_1_344_386.webp"
+                 alt="Пломбир">
+            <div class="text">
+                Пломбир
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/76f/vopsdp7j6ae0tt1jdfhvm33z6xob58g3/Soffit_SP_grafit_1_344_386.webp"
+                 alt="Графит">
+            <div class="text">
+                Графит
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/bf0/jvxz9nki1c7nql9v6djzlxl81umgb10l/Soffit_SP_shokolad_1_344_386.webp"
+                 alt="Шоколад">
+            <div class="text">
+                Шоколад
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product-info">
+        <h2>Софит Premium, T4 сплошной</h2>
+        <div class="price">21.84 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3000х305 мм</p>
+        <p>Рабочая площадь — 0.92 м2 </p>
+        <p>Толщина — 1.1 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 16 шт </p>
+        <p>Вес брутто — 29.3 кг </p>
+        <p>Размер упаковки — 3026x353x136 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/dc1/5ri0z99m2au6rb0qmxzr5k8y89nginkc/Soffit_PP_kashtan_1_344_386.webp"
+                 alt="Каштан">
+            <div class="text">
+                Каштан
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/6b7/4mxosk7f88iiqa72wfb4jh2nsdc6fmqb/Soffit_PP_plombir_1_344_386.webp"
+                 alt="Пломбир">
+            <div class="text">
+                Пломбир
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/edb/ty1ae6y06ejrdaj5vqnb2lqmw0bt3c5r/Soffit_PP_grafit_1_344_386.webp"
+                 alt="Графит">
+            <div class="text">
+                Графит
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/c9a/c913j0kqtbevdr64dj9peyaj7p762vvh/Soffit_PP_shokolad_1_344_386.webp"
+                 alt="Шоколад">
+            <div class="text">
+                Шоколад
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product-info">
+        <h2>Софит Premium, T4 с полной перфорацией</h2>
+        <div class="price">21.84 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3000х305 мм</p>
+        <p>Рабочая площадь — 0.92 м2 </p>
+        <p>Толщина — 1.1 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 16 шт </p>
+        <p>Вес брутто — 29.2 кг </p>
+        <p>Размер упаковки — 3026x353x136 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+<div class="container">
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/143/tvkdpr19zgutph0vsxkotam2dlgq5128/Soffit_TSP_kashtan_1_344_386.webp"
+                 alt="Каштан">
+            <div class="text">
+                Каштан
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/7ab/5n94yvzde2izzhshuk7d6fobz1nneqsv/Soffit_TSP_plombir_1_344_386.webp"
+                 alt="Пломбир">
+            <div class="text">
+                Пломбир
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/ba5/lkgwavqfq0m243g96qgwzqdzbb2ebllm/Soffit_TSP_grafit_1_344_386.webp"
+                 alt="Графит">
+            <div class="text">
+                Графит
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/904/zvd15rn4h2mhp7nu7ova2usf41nbn8ax/Soffit_TSP_shokolad_1_344_386.webp"
+                 alt="Шоколад">
+            <div class="text">
+                Шоколад
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product-info">
+        <h2>Софит Premium, T4 с центральной перфорацией</h2>
+        <div class="price">18.12 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Рабочие размеры — 3000х305 мм</p>
+        <p>Рабочая площадь — 0.92 м2 </p>
+        <p>Толщина — 1.1 мм </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 16 шт </p>
+        <p>Вес брутто — 29.2 кг </p>
+        <p>Размер упаковки — 3026x353x136 мм </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+
+<footer class="container py-5">
+    <div class="row" bis_skin_checked="1">
+        <div class="col-12 col-md" bis_skin_checked="1">
+            <small class="d-block mb-3 text-muted">© 2020-2024</small>
+        </div>
+
+        <div class="col-6 col-md" bis_skin_checked="1">
+            <h5 >О нас</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="https://vk.com/psd_soligorsk?from=search">VK</a></li>
+                <li><a class="text-muted" href="https://www.instagram.com/postroy_svoy_dom_sol/">Instagram</a></li>
+                Мы находимся по адресу: д.Метявичи, ул.Калинина д.17
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
