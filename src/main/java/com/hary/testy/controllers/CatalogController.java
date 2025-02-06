@@ -40,4 +40,10 @@ public class CatalogController {
     public String getInfo() {
         return "order";
     }
+
+    @GetMapping("/catalog/flexibleTiles")
+    public String getFlexibleTiles() {
+        return "catalog/flexibleTiles";
+    }
+
 }

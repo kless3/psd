@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гибкая черепица</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        .nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #3399cc;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-images {
+            flex: 2;
+
+        }
+
+        .product-images img.main-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+
+            border-radius: 5px;
+        }
+
+        .blog {
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+
+        .blog img {
+            max-width: 250px;
+        }
+
+        .blog .text {
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            transition: 0.5s;
+            width: 98%;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 5px;
+            color: #fff;
+        }
+
+        .blog:hover .text {
+            opacity: 1;
+        }
+
+        .additional-images {
+            display: flex;
+            flex-direction: column;
+            gap: 2px; /* Минимальный отступ между изображениями */
+        }
+
+        .additional-images img {
+            width: 100px;
+            height: 150px;
+
+            border-radius: 5px;
+        }
+
+        .product-info {
+            flex: 2;
+            padding-left: 20px; /* Уменьшите отступ */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #3399cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="collapse bg-dark" id="navbarHeader" bis_skin_checked="1">
+
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow" bis_skin_checked="1">
+        <div class="container d-flex justify-content-between" bis_skin_checked="1">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <!--                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>-->
+
+                <strong>Построй свой дом</strong>
+            </a>
+            <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+        </div>
+    </div>
+</header>
+<br/>
+<br/>
+
+
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/f96/pv0390qp8thwu20e9wx3mqkx9jvj2p1c/IMG_5105_kofe_prev_344_386.webp"
+                 alt="Кофе">
+            <div class="text">
+                Кофе
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/041/nm1i15n598rdqud51b2z27mxf1mazixe/IMG_5093_izyum_prev_344_386.webp"
+                 alt="Изюм">
+            <div class="text">
+                Изюм
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/0d5/50gh2s79909pfk7vg3zg5lq6i38hsgkx/IMG_5102_fladen_prev_344_386.webp"
+                 alt="Фладен">
+            <div class="text">
+                Фладен
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/d1f/3wpvbyz4cxgzvhxi1pmz8ktd6lniknhk/IMG_5086_tryufel_prev_344_386.webp"
+                 alt="Трюфель">
+            <div class="text">
+                Трюфель
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Ламинированная черепица Dragon Lux</h2>
+        <div class="price">37.71 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Толщина гонта — 3.05 ± 0.2 (одного слоя) мм</p>
+        <p>Посыпка — базальт </p>
+        <p>Длина — 1000 мм </p>
+        <p>Ширина — 391+-3 мм </p>
+        <p>Форма нарезки — Драконий зуб </p>
+        <p>Коэффициент перехлёста — 3 </p>
+        <p>Максимальная сила растяжения в продольном направлении, Н, не менее — 600 </p>
+        <p>Максимальная сила растяжения в поперечном направлении, Н, не менее — 400 </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 14 шт </p>
+        <p>Вес одной упаковки брутто — 35.4 кг </p>
+        <p>Вес поддона брутто — 1487 кг </p>
+        <p>Покрываемая поверхность из одной упаковки — 2,38 м2 </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/16f/42cvj6fv0oe6jlxtzc0igfto7a65gksn/IMG_5099_sliva_prev_344_386.webp"
+                 alt="Слива">
+            <div class="text">
+                Слива
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/659/sl5pybpcerar240gj6izacuc6n9iz0es/IMG_5110_zrelyy-kashtan_prev_344_386.webp"
+                 alt="Зрелый каштан">
+            <div class="text">
+                Зрелый каштан
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/1e3/jcv0p85b790xjegipjwfpxp2gvpj8lai/IMG_5070_khalva_prev_344_386.webp"
+                 alt="Халва">
+            <div class="text">
+                Халва
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/371/3vpny4fbs9ggqdys2wkv3rmm7m7w75ha/IMG_5096_kapuchino_prev_344_386.webp"
+                 alt="Капучино">
+            <div class="text">
+                Капучино
+            </div>
+        </div>
+
+
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/9ba/56vdgpe5tl5rrdulhxa1wwvkjd0fdby6/IMG_5082_ezhevika_prev_344_386.webp"
+                 alt="Ежевика">
+            <div class="text">
+                Ежевика
+            </div>
+        </div>
+
+
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/3a2/hrveppdxbpsmkjgejb374hj9x07pqn5c/IMG_5079_vagasi_prev_344_386.webp"
+                 alt="Вагаси">
+            <div class="text">
+                Вагаси
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Ламинированная черепица Dragon Premium</h2>
+        <div class="price">37.71 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Толщина гонта — 2.8 ± 0.2 (одного слоя) мм</p>
+        <p>Посыпка — базальт </p>
+        <p>Длина — 1000 мм </p>
+        <p>Ширина — 391+-3 мм </p>
+        <p>Тип битума — СБС-модифицированный </p>
+        <p>Форма нарезки — Драконий зуб </p>
+        <p>Коэффициент перехлёста — 3 </p>
+        <p>Максимальная сила растяжения в продольном направлении, Н, не менее — 600 </p>
+        <p>Максимальная сила растяжения в поперечном направлении, Н, не менее — 400 </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 14 шт </p>
+        <p>Вес одной упаковки брутто — 31.8 кг </p>
+        <p>Вес поддона брутто — 1431 кг </p>
+        <p>Покрываемая поверхность из одной упаковки — 2,38 м2 </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/e1b/lo51vtkfioiwjqzc5qcigp58of3qvxek/temno_korich_prev_344_386.webp"
+                 alt="Тёмно-коричневый">
+            <div class="text">
+                Тёмно-коричневый
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/a91/0ggmkcqsmcfgkmyjzaitm4ryrza4wz7i/svetlo_korich_prev_344_386.webp"
+                 alt="Светло-коричневый">
+            <div class="text">
+                Светло-коричневый
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/970/oldg3p75f13jq19aadnq2msao41z6jmx/ser_prev_344_386.webp"
+                 alt="Серый">
+            <div class="text">
+                Серый
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/736/najgmtr5s9dl74qn8ud32ocq1xjorenu/dragom_temno_ser_prev_344_386.webp"
+                 alt="Тёмно-серый">
+            <div class="text">
+                Тёмно-серый
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Ламинированная черепица Dragon Standard</h2>
+        <div class="price">27.03 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Толщина гонта — 2.7 ± 0.2 (одного слоя) мм</p>
+        <p>Посыпка — базальт </p>
+        <p>Длина — 1000 мм </p>
+        <p>Ширина — 391+-3 мм </p>
+        <p>Тип битума — СБС-модифицированный </p>
+        <p>Форма нарезки — Драконий зуб </p>
+        <p>Коэффициент перехлёста — 3 </p>
+        <p>Максимальная сила растяжения в продольном направлении, Н, не менее — 600 </p>
+        <p>Максимальная сила растяжения в поперечном направлении, Н, не менее — 400 </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 14 шт </p>
+        <p>Вес одной упаковки брутто — 30.8 кг </p>
+        <p>Вес поддона брутто — 1386 кг </p>
+        <p>Покрываемая поверхность из одной упаковки — 2,38 м2 </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+
+
+<div class="container">
+
+    <div class="additional-images">
+        <div class="blog">
+            <img class="main-image"
+                 src="https://www.docke.ru/upload/webp/catalog_card/iblock/073/lmf81qvvzybqo4h4x6u5izsy1z5a9ofn/IMG_5124_LCH-krasnyy_prev_344_386.webp"
+                 alt="Красный">
+            <div class="text">
+                Красный
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/75c/0rukivpwypoeo3noyk75s9sfix80sq3e/IMG_5119_LCH-svetl_korichnevyy_prev_344_386.webp"
+                 alt="Светло-коричневый">
+            <div class="text">
+                Светло-коричневый
+            </div>
+        </div>
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/ef1/51bmx92wojan37r8devmqoicjqu7rmol/IMG_5113_temno_korichnevyy_prev_344_386.webp"
+                 alt="Тёмно-коричневый">
+            <div class="text">
+                Тёмно-коричневый
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://www.docke.ru/upload/webp/catalog_card/iblock/8d7/2rhkyzwep3tzz1wl1qohy8pgs732nckm/IMG_5116_LCH-seryy_prev_344_386.webp"
+                 alt="Серый">
+            <div class="text">
+                Серый
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="product-info">
+        <h2>Ламинированная черепица Dragon Standard</h2>
+        <div class="price">23.32 BYN</div>
+
+        <h3>Характеристики</h3>
+        <p>Толщина гонта — 2.5 ± 0.2 (одного слоя) мм</p>
+        <p>Посыпка — Микс: антрацит, базальт </p>
+        <p>Длина — 1000 мм </p>
+        <p>Ширина — 391+-3 мм </p>
+        <p>Тип битума — Окисленный </p>
+        <p>Форма нарезки — Иррегулярная </p>
+        <p>Коэффициент перехлёста — 3 </p>
+        <p>Максимальная сила растяжения в продольном направлении, Н, не менее — 600 </p>
+        <p>Максимальная сила растяжения в поперечном направлении, Н, не менее — 400 </p>
+
+
+        <h3>Информация об упаковке</h3>
+        <p>Количество в упаковке — 14 шт </p>
+        <p>Вес одной упаковки брутто — 30.3 кг </p>
+        <p>Вес поддона брутто — 1363 кг </p>
+        <p>Покрываемая поверхность из одной упаковки — 2,38 м2 </p>
+
+        <a class="btn btn-outline-primary" href="/info">Оставить заявку</a>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="container py-5">
+    <div class="row" bis_skin_checked="1">
+        <div class="col-12 col-md" bis_skin_checked="1">
+            <small class="d-block mb-3 text-muted">© 2020-2024</small>
+        </div>
+
+        <div class="col-6 col-md" bis_skin_checked="1">
+            <h5 >О нас</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="https://vk.com/psd_soligorsk?from=search">VK</a></li>
+                <li><a class="text-muted" href="https://www.instagram.com/postroy_svoy_dom_sol/">Instagram</a></li>
+                Мы находимся по адресу: д.Метявичи, ул.Калинина д.17
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
